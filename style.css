@@ -1,14 +1,7 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0b0e16;
-  color: #fff;
-  text-align: center;
-  padding: 100px 0;
-}
+@import "./global/global.css";
+@import "./utilities/variables.css";
 
 
-h1 {
-    background-color: #0b0e16;
-    font-size: 40px;
-}
+/* utilities */
+@import "./utilities/components.css";
+

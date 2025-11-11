@@ -1,0 +1,58 @@
+/* layout */
+
+.wrap {
+  width: min(1100px, 92%);
+  margin-inline: auto;
+}
+
+.wrap-1200 {
+  width: min(1200px, 92%);
+  margin-inline: auto;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.section.alt {
+  background: var(--paper);
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* buttons */
+.small {
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: .95rem;
+}
+
+.btn {
+  background: var(--prime);
+  border: none;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+
+.small-btn {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 10px;
+  margin-right: 8px;
+  cursor: pointer;
+}

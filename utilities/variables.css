@@ -1,0 +1,24 @@
+:root {
+  --bg: #0b0e16;
+  --paper: #141823;
+  --text: #e9ecf1;
+  --muted: #a6adbb;
+  --accent: #55b6ff;
+  --prime: var(--accent);
+  --line: #23283a;
+  --white: #fff;
+  --input: #0f121a;
+  --shadow: 0 30px 60px rgba(0, 0, 0, .35);
+}
+
+.theme-light {
+  --bg: #f4f6fb;
+  --paper: #ffffff;
+  --text: #0e0f13;
+  --muted: #5c6270;
+  --accent: #2a8cff;
+  --prime: #2a8cff;
+  --line: #e5e8f1;
+  --input: #f1f2f7;
+  --shadow: 0 30px 60px rgba(0, 0, 0, .15);
+}
