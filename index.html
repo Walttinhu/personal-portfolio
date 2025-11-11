@@ -7,9 +7,31 @@
     <meta name="description" content="Portfólio do Walter — Front End Developer. Feito com HTML, CSS e JS.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body id="topo" class="theme-dark">
-    <h1>Walter — Portfolio</h1>
-    <script src="script.js"></script>
+
+    <header class="nav">
+        <div class="wrap">
+            <a class="brand" href="#inicio">Walter</a>
+
+            <div class="nav-right">
+                <button id="themeBtn" class="small-btn" aria-label="Alternating theme">🌓</button>
+                <button class="hamburguer" aria-label="Open menu" aria-expanded="false">☰</button>
+            </div>
+
+            
+            <nav class="menu" id="menu">
+                <a href="#home" class="navlink">Home</a>
+                <a href="#skills" class="navlink">Skills</a>
+                <a href="#projects" class="navlink">Projects</a>
+                <a href="#contact" class="btn">Contact</a>
+
+                
+            </nav>
+            
+        </div>
+    </header>
+
 </body>
 </html>

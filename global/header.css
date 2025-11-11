@@ -1,0 +1,92 @@
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(10, 12, 18, .8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  z-index: 10;
+}
+
+.theme-light .nav {
+  background: rgba(255, 255, 255, .9);
+}
+
+.nav .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.brand {
+  font-weight: 800;
+}
+
+.menu {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.navlink {
+  position: relative;
+  padding: 8px 4px;
+}
+
+.navlink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background: var(--white);
+  transition: width .25s ease;
+}
+
+
+.theme-light .navlink::after {
+  background: #111;
+}
+
+.navlink:hover::after,
+.navlink:focus::after,
+.navlink.active::after {
+  width: 100%;
+}
+
+.hamburguer {
+  display: none;
+  background: transparent;
+  border: 0;
+  color: var(--text);
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .hamburguer {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    inset: 64px 16px auto 16px;
+    display: none;
+    flex-direction: column;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+}
