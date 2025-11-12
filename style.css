@@ -7,3 +7,5 @@
 /* utilities */
 @import "./utilities/components.css";
 
+/* Home */
+@import "./home/hero.css";

@@ -18,16 +18,11 @@
   background: var(--paper);
 }
 
-.row {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
 
 /* buttons */
 .small {
   padding: 8px 12px;
-  border-radius: 10px;
+  border-radius: 3px;
   font-size: .95rem;
 }
 
@@ -36,7 +31,7 @@
   border: none;
   color: #fff;
   padding: 10px 16px;
-  border-radius: 12px;
+  border-radius: 3px;
   font-weight: 600;
   display: inline-block;
 }
