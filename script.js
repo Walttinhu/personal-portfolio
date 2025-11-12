@@ -47,3 +47,25 @@ function setActive(){
 }
 document.addEventListener('scroll', setActive);
 setActive();
+
+
+// Role typing
+(function loopRole(){
+  const roleElement = $('#role');
+  if (!roleElement) return;
+  const text = 'Front End Developer Junior';
+  const typeDelay = 80, eraseDelay = 50, hold = 900;
+  let i = 0, typing = true;
+  function tick(){
+    if (typing){
+      roleElement.textContent = text.slice(0, i++);
+      if (i <= text.length) return setTimeout(tick, typeDelay);
+      typing = false; return setTimeout(tick, hold);
+    } else {
+      roleElement.textContent = text.slice(0, i--);
+      if (i >= 0) return setTimeout(tick, eraseDelay);
+      typing = true; i = 0; return setTimeout(tick, typeDelay);
+    }
+  }
+  tick();
+})();
