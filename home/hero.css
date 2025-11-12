@@ -56,9 +56,15 @@
   font-weight: 600;
 }
 
+/* role cursor blink */
+#role{border-right:2px solid var(--white); padding-right:3px; animation:blink 1s step-end infinite}
+.theme-light #role{border-right-color:#111}
+@keyframes blink{50%{border-right-color:transparent}}
 
-.btn, .outline:hover {
-  border-color: var(--prime);  
+.btn:hover{ filter:brightness(1.1) }
+
+.btn.outline:hover {
+  border-color: var(--accent);  
 }
 
 .connect-cta {
