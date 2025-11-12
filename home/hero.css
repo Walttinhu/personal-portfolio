@@ -56,6 +56,11 @@
   font-weight: 600;
 }
 
+
+.btn, .outline:hover {
+  border-color: var(--prime);  
+}
+
 .connect-cta {
   max-width: 200px;
   padding: 10px 20px;
@@ -70,11 +75,11 @@
   border: 1px solid var(--line);
   border-radius: 3px;
   color: var(--text);
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* transition: background-color 0.3s ease, border-color 0.3s ease; */
 }
 
 .connect-cta:hover {
-    background-color: var(--prime);
+    border-color: var(--prime);
 }
 
 .circle-arrow {
