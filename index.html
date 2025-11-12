@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Walter • Portfolio</title>
-    <meta name="description" content="Portfólio do Walter — Front End Developer. Feito com HTML, CSS e JS.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta
+      name="description"
+      content="Portfólio do Walter — Front End Developer. Feito com HTML, CSS e JS."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body id="topo" class="theme-dark">
-
+  </head>
+  <body id="topo" class="theme-dark">
     <header class="nav">
-        <div class="wrap">
-            <a class="brand" href="#inicio">Walter</a>
+      <div class="wrap">
+        <a class="brand" href="#inicio">Walter</a>
 
-            <div class="nav-right">
-                <button id="themeBtn" class="small-btn" aria-label="Alternating theme">🌓</button>
-                <button class="hamburguer" aria-label="Open menu" aria-expanded="false">☰</button>
-            </div>
-
-            
-            <nav class="menu" id="menu">
-                <a href="#home" class="navlink">Home</a>
-                <a href="#skills" class="navlink">Skills</a>
-                <a href="#projects" class="navlink">Projects</a>
-                <a href="#contact" class="btn">Contact</a>
-
-                
-            </nav>
-            
+        <div class="nav-right">
+          <button
+            id="themeBtn"
+            class="small-btn"
+            aria-label="Alternating theme"
+          >
+            🌓
+          </button>
+          <button
+            class="hamburguer"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
         </div>
+
+        <nav class="menu" id="menu">
+          <a href="#home" class="navlink">Home</a>
+          <a href="#skills" class="navlink">Skills</a>
+          <a href="#projects" class="navlink">Projects</a>
+          <a href="#contact" class="btn">Contact</a>
+        </nav>
+      </div>
     </header>
 
-</body>
+    <main id="inicio" class="section hero hero-bg">
+        <div class="wrap hero-grid">
+            <div>
+                <p class="eyebrow">Hi, I'm</p>
+                <h1>Walter — <span id="role" aria-label="Front End Developer"></span></h1>
+                <p class="muted">I love creating fast, accessible, and responsive websites with clean, maintainable code. 
+                My focus is on turning ideas into seamless web experiences that look great and work perfectly on any device.</p>
+
+                <div class="row">
+                    <a href="#projetos" class="btn small">View Projects</a>
+                    <a class="btn outline small" href="assets/CV.pdf" download>Download CV</a>
+                </div>
+
+                <a class="connect-cta" href="#contato">Let's connect <span class="circle-arrow">→</span></a>
+            </div>
+
+            <div>
+                <img class="avatar floaty" src="./img/Mypicture2.png" alt="Foto do Walter">
+            </div>
+        </div>
+  </main>
+
+  </body>
 </html>
