@@ -69,3 +69,24 @@ setActive();
   }
   tick();
 })();
+
+// meter circles animation
+(function initMeters(){
+  $$('.meter .fg').forEach(c => {
+    const r = Number(c.getAttribute('r'));
+    const C = 2 * Math.PI * r;
+    const p = Number(c.dataset.percent || 0);
+    c.style.strokeDasharray = C;
+    c.style.strokeDashoffset = C;
+    const offset = C - (C * p / 100);
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (en.isIntersecting){
+          c.style.strokeDashoffset = offset;
+          obs.disconnect();
+        }
+      });
+    }, { threshold: .4 });
+    obs.observe(c);
+  });
+})();
