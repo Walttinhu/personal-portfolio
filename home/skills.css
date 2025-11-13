@@ -1,0 +1,93 @@
+/* Skills card overlapping */
+.skills-overlap {
+  padding-top: 40px;
+}
+
+.skills-card {
+  transform: translateY(-13%);
+}
+
+.skills-card {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 40px;
+  box-shadow: var(--shadow);
+  padding: 80px 40px;
+}
+
+.skills-head {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.skills-sub {
+  color: var(--muted);
+  margin: 6px auto 0;
+  max-width: 700px;
+}
+
+/* Carousel (skills & projetos iguais) */
+.carousel.shell {
+  position: relative;
+  padding: 18px 46px 28px;
+}
+
+.nav-round {
+  display: grid;
+  position: absolute;
+  font-size: 20px;
+  bottom: 18px;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  top: 160px;
+  border-radius: 50%;
+  place-items: center;
+  background: var(--paper);
+  color: var(--text);
+  border: 1px solid var(--line);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.nav-round:hover {
+  font-size: 24px;
+  border: 2px solid var(--accent);
+}
+
+.nav-round.left {
+  left: 12px;
+}
+
+.nav-round.right {
+  right: 12px;
+}
+
+.track {
+  display: flex;
+  gap: 26px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 6px 0;
+}
+
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  flex: 0 0 calc(33.333% - 17.5px);
+}
+
+@media (max-width: 920px) {
+  .slide {
+    flex-basis: calc(50% - 13px);
+  }
+}
+
+@media (max-width: 560px) {
+  .slide {
+    flex-basis: 100%;
+  }
+}
