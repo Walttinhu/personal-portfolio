@@ -24,6 +24,7 @@
   color: var(--muted);
   margin: 6px auto 0;
   max-width: 700px;
+  text-align: left;
 }
 
 /* Carousel (for skills and projects the same ) */
@@ -132,6 +133,39 @@
   }
 }
 
+@media (max-width: 500px) {
+
+  .skills-sub {
+    font-size: 1rem;
+  }
+ 
+  .nav-round.left {
+    left: 20px;
+}
+
+  .nav-round.right {
+    right: 20px;
+}
+
+}
+
+@media (max-width: 420px) {
+
+.nav-round {
+  top: 85px;
+  }
+ 
+  .nav-round.left {
+  left: 0px;
+}
+
+.nav-round.right {
+  right: 0px;
+}
+
+}
+
+
 /* Meter (circular progress) */
 .meter {
   position: relative;
@@ -188,4 +222,16 @@
   height: 160px;
 
 }  
+}
+
+@media (max-width: 420px) { 
+  .meter {
+  width: 120px;
+  height: 120px;
+
+}  
+
+  .meter .pct {
+    font-size: 1.2rem;
+  }
 }

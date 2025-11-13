@@ -97,3 +97,26 @@
   background: var(--paper);
   border: 1px solid var(--line);
 }
+
+
+@media (max-width: 500px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    justify-self: center;
+    grid-column: 2;
+  }
+
+  .avatar {
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  .eyebrow, .muted, .connect-cta {
+    text-align: center;
+    justify-self: center; 
+  }
+
+}
