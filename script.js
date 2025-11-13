@@ -90,3 +90,18 @@ setActive();
     obs.observe(c);
   });
 })();
+
+
+// carrossel bottons (skills and projects)
+$$('.cbtn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const dir = Number(btn.dataset.dir || 1);
+    const track = document.querySelector(btn.dataset.target);
+    if (!track) return;
+    const slide = track.querySelector('.slide');
+    const style = getComputedStyle(track);
+    const gap = parseFloat(style.columnGap || style.gap) || 26;
+    const step = slide ? slide.getBoundingClientRect().width + gap : 340;
+    track.scrollBy({ left: dir * step, behavior: 'smooth' });
+  });
+});

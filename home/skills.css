@@ -79,7 +79,9 @@
 
 .slide {
   flex: 0 0 calc(33.333% - 17.5px);
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* .slide:hover {
@@ -123,17 +125,11 @@
 
 }
 
-@media (max-width: 570px) {
+@media (max-width: 600px) {
   
-
-  .nav-round.left {
-  left: 30px;
-}
-
-.nav-round.right {
-  right: 30px;
-}
-
+  .nav-round {
+    top: 95px;
+  }
 }
 
 /* Meter (circular progress) */
@@ -184,4 +180,12 @@
   bottom: -30px;
   transform: translateX(-50%);
   font-weight: 700;
+}
+
+@media (max-width: 600px) { 
+  .meter {
+  width: 160px;
+  height: 160px;
+
+}  
 }
