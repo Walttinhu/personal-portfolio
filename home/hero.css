@@ -106,11 +106,10 @@
 
   .row {
     justify-self: center;
-    grid-column: 2;
   }
 
   .avatar {
-    grid-row: 1;
+    max-width: 280px;
     justify-self: center;
   }
 
