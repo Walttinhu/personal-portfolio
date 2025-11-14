@@ -20,11 +20,12 @@
 
 
 /* buttons */
-.small {
+
+/* .small {
   padding: 8px 12px;
   border-radius: 3px;
   font-size: .95rem;
-}
+} */
 
 .btn {
   background: var(--prime);
@@ -36,11 +37,20 @@
   display: inline-block;
 }
 
+.btn:hover{ filter:brightness(1.1) }
+
+
 .btn.outline {
   background: transparent;
   border: 1px solid var(--line);
   color: var(--text);
 }
+
+
+.btn.outline:hover {
+  border-color: var(--accent);  
+}
+
 
 .small-btn {
   border: 1px solid var(--line);
@@ -50,4 +60,16 @@
   border-radius: 10px;
   margin-right: 8px;
   cursor: pointer;
+}
+
+@media (max-width: 600px) { 
+  .btn {
+    font-size: 0.95rem;
+  }
+
+  .small-btn {
+    font-size: 0.95rem;
+  }
+
+  
 }

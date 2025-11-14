@@ -61,11 +61,6 @@
 .theme-light #role{border-right-color:#111}
 @keyframes blink{50%{border-right-color:transparent}}
 
-.btn:hover{ filter:brightness(1.1) }
-
-.btn.outline:hover {
-  border-color: var(--accent);  
-}
 
 .connect-cta {
   max-width: 200px;
