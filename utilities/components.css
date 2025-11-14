@@ -11,7 +11,7 @@
 }
 
 .section {
-  padding: 72px 0;
+  padding: 72px 0 40px 0px;
 }
 
 .section.alt {
@@ -72,4 +72,11 @@
   }
 
   
+}
+
+@media (max-width: 600px) {
+  .section {
+  padding: 40px 0;
+}
+
 }
