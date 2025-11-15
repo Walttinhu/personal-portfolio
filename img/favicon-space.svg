@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <!-- Gradiente planeta azul super escuro -->
+    <radialGradient id="planetBlueDark" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0a0f2b"></stop>   <!-- Azul quase preto -->
+      <stop offset="40%" stop-color="#101b44"></stop>  <!-- Azul escuro profundo -->
+      <stop offset="100%" stop-color="#1f3a8a"></stop> <!-- Azul médio mais vivo -->
+    </radialGradient>
+  </defs>
+
+  <!-- Fundo circular estilo planeta -->
+  <circle cx="150" cy="150" r="140" fill="url(#planetBlueDark)"></circle>
+
+  <!-- Símbolo </> -->
+  <text x="50%" y="55%" font-size="120" fill="white" font-family="Segoe UI, sans-serif" font-weight="800" text-anchor="middle" dominant-baseline="middle">
+    &lt;/&gt;
+  </text>
+</svg>
