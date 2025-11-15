@@ -105,3 +105,37 @@ $$('.cbtn').forEach(btn => {
     track.scrollBy({ left: dir * step, behavior: 'smooth' });
   });
 });
+
+
+// Contact form
+
+emailjs.init('HcN1n2Sb6BepqSVT-'); // Public Key
+
+const form = document.querySelector('#contactForm');
+const status = document.querySelector('#status');
+
+if(form){
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name = document.querySelector('#name').value.trim();
+    const email = document.querySelector('#email').value.trim();
+    const message = document.querySelector('#message').value.trim();
+
+    const okEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if(!name || !okEmail || message.length < 1){ // to accept any message
+      status.textContent = 'Please fill in all fields correctly.';
+      return;
+    }
+
+    emailjs.send('service_ovs3r1h', 'template_92dxczr', { name, email, message })
+      .then(() => {
+        status.textContent = 'Message sent successfully! Thank you!';
+        form.reset();
+      })
+      .catch((err) => {
+        console.error(err);
+        status.textContent = 'Oops! Something went wrong, try again.';
+      });
+  });
+}
