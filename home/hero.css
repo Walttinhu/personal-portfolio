@@ -101,11 +101,13 @@
   }
 
   .row {
+    margin: 0 auto;
     justify-self: center;
   }
 
   .avatar {
     max-width: 200px;
+    margin: 0 auto;
     justify-self: center;
   }
 
