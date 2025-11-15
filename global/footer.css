@@ -1,0 +1,33 @@
+.foot {
+  background: #0f121a;
+  border-top: 1px solid var(--line);
+}
+
+.theme-light .foot {
+  background: #f1f3fa;
+}
+
+.foot-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0;
+}
+
+.foot-copy {
+  color: var(--muted);
+}
+
+.foot-link {
+  color: var(--accent);
+  font-weight: 700;
+  border-bottom: 2px solid var(--accent);
+}
+
+@media (max-width: 640px) {
+  .foot-row {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

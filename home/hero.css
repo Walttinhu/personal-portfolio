@@ -28,6 +28,7 @@
   width: 100%;
   max-width: 300px;
   border-radius: 15%;
+  justify-self: end;
   /* border: 1px solid #fff;  */
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   object-fit: cover;
