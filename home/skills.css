@@ -141,13 +141,16 @@
     padding: 10px;
   }
 
+  .skills-head {
+  padding-top: 15px;
+}
+
   .skills-sub {
     font-size: 0.95rem;
     text-align: center;
   }
 
   
- 
   .nav-round.left {
     left: 20px;
 }
