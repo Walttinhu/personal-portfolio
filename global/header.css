@@ -73,6 +73,7 @@
 @media (max-width: 700px) {
   .hamburguer {
     display: block;
+    cursor: pointer;
   }
 
   .menu {
@@ -86,7 +87,9 @@
     border-radius: 12px;
   }
 
+
   .menu.open {
     display: flex;
   }
+  
 }

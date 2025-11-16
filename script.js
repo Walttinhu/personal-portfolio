@@ -35,8 +35,8 @@ if (hamburguer && menu) {
 // active section
 const links = $$('.navlink');
 function setActive(){
-  let id = 'inicio';
-  const sections = ['inicio','skills','projetos','contato'];
+  let id = 'home';
+  const sections = ['home','skills','projects','contact'];
   for (const s of sections){
     const el = document.getElementById(s);
     if (!el) continue;
