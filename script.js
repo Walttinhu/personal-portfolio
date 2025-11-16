@@ -55,8 +55,21 @@ setActive();
   if (!roleElement) return;
   const text = 'Front End Developer Junior';
   const typeDelay = 80, eraseDelay = 50, hold = 900;
+
+  roleElement.style.minWidth = text.length + 'ch';
+
   let i = 0, typing = true;
+  let playing = true;
+
+  const io = new IntersectionObserver(([entry]) => {
+    playing = entry.isIntersecting;
+  }, { threshold: 0 });
+  io.observe(roleElement);
+
   function tick(){
+    if (!playing) {            // if it,s not visible try again later
+      return setTimeout(tick, 200);
+    }
     if (typing){
       roleElement.textContent = text.slice(0, i++);
       if (i <= text.length) return setTimeout(tick, typeDelay);
