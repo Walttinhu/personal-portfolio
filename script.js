@@ -115,7 +115,16 @@ $$('.cbtn').forEach(btn => {
     const style = getComputedStyle(track);
     const gap = parseFloat(style.columnGap || style.gap) || 26;
     const step = slide ? slide.getBoundingClientRect().width + gap : 340;
-    track.scrollBy({ left: dir * step, behavior: 'smooth' });
+    
+    const current = track.scrollLeft;
+    const maxScroll = track.scrollWidth - track.clientWidth;
+
+    // Calculate the next scroll and clamp it between 0 and maxScroll.
+    let next = current + dir * step;
+    if (next < 0) next = 0;
+    if (next > maxScroll) next = maxScroll;
+
+    track.scrollTo({ left: next, behavior: 'smooth' });
   });
 });
 
