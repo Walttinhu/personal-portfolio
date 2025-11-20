@@ -23,14 +23,15 @@
 }
 
 .pitem h3 {
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0px;
   text-align: center;
 }
 
 .pitem p {
-  margin: 0 15px;
+  margin:  15px;
   text-align: center;
   color: var(--muted);
+
 }
 
 .proj-lang ul {
@@ -121,7 +122,8 @@
 
 
   #projects .nav-round {
-  top: 450px;
+  top: auto;
+  bottom: 0px;
   left: 50px;
 }
   #projects .nav-round.left {
@@ -132,7 +134,7 @@
 
 @media (max-width: 500px) {
   #projects p {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     margin: 0px;
   }
 
