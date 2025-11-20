@@ -161,3 +161,26 @@ if(form){
       });
   });
 }
+
+
+// Function to check the visibility of elements with the class 'slide-down-item'
+// and add the 'visible' class when they come into view during scroll
+
+function checkVisibility() {
+  const items = document.querySelectorAll('.slide-down-item'); 
+  const windowHeight = window.innerHeight;  
+  const offset = 150;  
+  
+  items.forEach(item => {
+    const itemPosition = item.getBoundingClientRect().top;  
+    if (itemPosition < windowHeight - offset) {  
+      item.classList.add('visible');  
+    }
+  });
+}
+
+
+window.addEventListener('scroll', checkVisibility);
+
+document.addEventListener('DOMContentLoaded', checkVisibility);
+
